@@ -77,4 +77,3 @@ class Tradier:
     def get_lookup(self, q: str, **kwargs: dict) -> dict:
         """ https://documentation.tradier.com/brokerage-api/markets/get-lookup """
         return self.request("/v1/markets/lookup", {"q": q, **kwargs})
-

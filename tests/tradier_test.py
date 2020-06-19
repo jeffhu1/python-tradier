@@ -1,11 +1,12 @@
 import calendar
 import datetime
+import os
 
 import pytest
 
 from tradier import Tradier
 
-ACCESS_TOKEN = "your access token"
+ACCESS_TOKEN = os.environ["TRADIER_ACCESS_TOKEN"]
 TODAY = datetime.date.today()
 FRIDAY = TODAY + datetime.timedelta((calendar.FRIDAY - TODAY.weekday()) % 7)
 
