@@ -1,0 +1,9 @@
+# python caches
+__pycache__
+.pytest_cache
+
+# editor
+.vscode
+
+# macos
+.DS_Store
